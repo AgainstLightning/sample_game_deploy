@@ -3,14 +3,14 @@
 // that they need an Internet connection to run the project if desired.
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
-const CACHE_VERSION = "1714007591|12272128375";
+const CACHE_VERSION = "1714059354|64034720663";
 const CACHE_PREFIX = "SimplePlatformer-sw-cache-";
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
-const OFFLINE_URL = "app.offline.html";
+const OFFLINE_URL = "sample_game.offline.html";
 // Files that will be cached on load.
-const CACHED_FILES = ["app.html","app.js","app.offline.html","app.icon.png","app.apple-touch-icon.png","app.worker.js","app.audio.worklet.js"];
+const CACHED_FILES = ["sample_game.html","sample_game.js","sample_game.offline.html","sample_game.icon.png","sample_game.apple-touch-icon.png","sample_game.worker.js","sample_game.audio.worklet.js"];
 // Files that we might not want the user to preload, and will only be cached on first load.
-const CACHABLE_FILES = ["app.wasm","app.pck"];
+const CACHABLE_FILES = ["sample_game.wasm","sample_game.pck"];
 const FULL_CACHE = CACHED_FILES.concat(CACHABLE_FILES);
 
 self.addEventListener("install", (event) => {
